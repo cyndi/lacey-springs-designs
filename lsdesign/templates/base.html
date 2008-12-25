@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+   "http://www.w3.org/TR/html4/strict.dtd"> 
+ 
+<html lang="en"> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <title>{% block title %}Lacey Springs Designs{% endblock %}</title> 
+ 
+  <!-- Framework CSS --> 
+    <link rel="stylesheet" href="/media/blueprint/screen.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/media/blueprint/print.css" type="text/css" media="print"> 
+  <!--[if IE]><link rel="stylesheet" href="/media/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]--> 
+    
+    <!-- Import fancy-type plugin for the sample page. --> 
+    <link rel="stylesheet" href="/media/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/media/css/base.css" type="text/css" media="screen, projection"> 
+</head>
+
+<body id='{% block bodyid %}generic{% endblock %}'>
+<div class="container header showgrid">
+    <div class="span-16">
+        <h1>Lacey Springs Designs</h1>
+    </div>
+    <div class="prepend-4 span-4 last">
+        <ul id='topnav'>
+            <li id="nav-home"><a href="/">Home</a></li>
+            <li id="nav-work"><a href="{% url work_root %}">Work</a></li>
+            {% if user.is_staff %}<li id="nav-admin">
+                <a href="/admin/">Admin</a>
+            </li>{% endif %}
+        </ul>
+    </div>
+</div>
+<div class="container">
+    {% block base_content %}Content Goes Here{% endblock %}
+</div>
+</body>
+</html>
