@@ -38,9 +38,29 @@ requirements = [
 #        'rev':'109',
 #        'url':'http://django-template-utils.googlecode.com/svn/trunk',
     {
+        'name':'djangologging',
+        'dist':'svn',
+        'url':'http://django-logging.googlecode.com/svn/trunk/djangologging/',
+    },
+    {
         'name':'sorl-thumbnail',
         'package':'sorl',
         'dist':'svn',
         'url':'http://sorl-thumbnail.googlecode.com/svn/trunk',
+    },
+    {
+        'name':'PIL 1.1.6',
+        'package':'PIL',
+        'dist':'pypi',
+    },
+    {
+        'name':'django-test-utils',
+        'dist':'git',
+        'url':'git://github.com/ericholscher/django-test-utils.git',
+    },
+    {
+        'name':'django-debug-toolbar',
+        'dist':'git',
+        'url':'git://github.com/robhudson/django-debug-toolbar.git',
     },
 ]
