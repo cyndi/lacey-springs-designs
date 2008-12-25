@@ -85,7 +85,7 @@ INSTALLED_APPS = (
 )   
 
 import socket
-hostname = socket.gethostname().split('.')[0]
+hostname = socket.gethostname().split('.')[0].replace("-", "_")
 host_settings = "host_settings_%s" % hostname
 if DEBUG:
     host_settings += "_debug"

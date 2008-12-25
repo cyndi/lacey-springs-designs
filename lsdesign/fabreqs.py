@@ -14,9 +14,9 @@ requirements = [
 #        'rev': '1.4.1',
 #        'url':'http://pypi.python.org/pypi/dateutil',
     {
-        'name': 'django-1.0.2',
-        'dist':'svn',
-        'url':'http://code.djangoproject.com/svn/django/tags/releases/1.0.2',
+        'name': 'django',
+        'package':'django',
+        'dist':'pypi',
     },
 #        'name':'django-tagging',
 #        'package':'tagging',
@@ -37,11 +37,11 @@ requirements = [
 #        'dist':'svn',
 #        'rev':'109',
 #        'url':'http://django-template-utils.googlecode.com/svn/trunk',
-    {
-        'name':'djangologging',
-        'dist':'svn',
-        'url':'http://django-logging.googlecode.com/svn/trunk/djangologging/',
-    },
+#    {
+#        'name':'djangologging',
+#        'dist':'svn',
+#        'url':'http://django-logging.googlecode.com/svn/trunk/djangologging/',
+#    },
     {
         'name':'sorl-thumbnail',
         'package':'sorl',
@@ -49,10 +49,15 @@ requirements = [
         'url':'http://sorl-thumbnail.googlecode.com/svn/trunk',
     },
     {
-        'name':'PIL 1.1.6',
-        'package':'PIL',
-        'dist':'pypi',
+        'name':'PIL',
+        'dist':'wget',
+        'url':'http://effbot.org/downloads/Imaging-1.1.6.tar.gz',
     },
+#    {
+#        'name':'PIL',
+#        'package':'PIL',
+#        'dist':'pypi',
+#    },
     {
         'name':'django-test-utils',
         'dist':'git',
